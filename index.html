@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,145 +6,43 @@
     <title>Office Treasure Hunt</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #e60000, #990000);
-            color: white;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .hero-section {
-            text-align: center;
-            padding: 40px 20px;
-            background: #fff5f5;
-            color: #990000;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .hero-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-section p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        .options {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .option-card {
-            background: white;
-            color: #990000;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-            flex: 1 1 300px;
-        }
-
-        .option-card h3 {
-            margin-top: 0;
-        }
-
-        .option-card p {
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        .team-setup input {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 1rem;
-            width: 60%;
-            margin-right: 10px;
-        }
-
-        .team-setup button,
-        .option-card button {
-            background: linear-gradient(145deg, #e60000, #cc0000);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .team-setup button:hover,
-        .option-card button:hover {
-            background: #990000;
-        }
-
-        .info-section {
-            margin-top: 40px;
-            background: white;
-            color: #990000;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .info-section h2 {
-            margin-top: 0;
-            text-align: center;
-        }
-
-        .info-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .info-section li {
-            padding: 10px 0;
-            border-bottom: 1px solid #f0c0c0;
-            font-size: 1rem;
-        }
-
-        .info-section li:last-child {
-            border-bottom: none;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero-section">
-            <h1>🏆 VOIS Treasure Hunt</h1>
-            <p>Welcome to the ultimate office adventure!</p>
+<div class="container">
+    <div class="hero-section">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <img src="back-to-college.png" alt="Back to College Logo" style="height: 60px;">
             
-            <div class="options">
-                <div class="option-card">
-                    <h3>👥 For Teams</h3>
-                    <p>Scan the QR codes to start your treasure hunt journey!</p>
-                    <div class="team-setup">
-                        <input type="text" id="teamId" maxlength="10">
-                        <button onclick="setTeamId()">Start Hunt</button>
-                    </div>
-                </div>
-                
-                <div class="option-card">
-                    <h3>🎮 For Admin</h3>
-                    <p>Monitor team progress and view the leaderboard</p>
-                    <button onclick="goToAdmin()">Admin Dashboard</button>
+            <h1 style="margin: 0; font-size: 2.5rem; font-weight: 700; color: #990000; text-align: center; flex: 1;">
+                🏆 VOIS Treasure Hunt 🏆
+            </h1>
+
+            <img src="fun-factory.png" alt="Fun Factory Logo" style="height: 60px;">
+        </div>
+
+        <p style="text-align: center;">Welcome to the ultimate office adventure!</p>
+
+        <div class="options">
+            <div class="option-card">
+                <h3>👥 For Teams</h3>
+                <p>Scan the QR codes to start your treasure hunt journey!</p>
+                <div class="team-setup">
+                    <input type="text" id="teamId" maxlength="10">
+                    <button onclick="setTeamId()">Start Hunt</button>
                 </div>
             </div>
+
+            <div class="option-card">
+                <h3>🎮 For Admin</h3>
+                <p>Monitor team progress and view the leaderboard</p>
+                <button onclick="goToAdmin()">Admin Dashboard</button>
+            </div>
         </div>
+    </div>
+
+
         
-        <div class="info-section">
+        <div class="info-section", align="center">
             <h2>Game Rules</h2>
             <ul>
                 <li>🔍 Scan QR codes in sequence</li>
@@ -157,4 +55,4 @@
     
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
