@@ -676,3 +676,4 @@ console.log('🔥 Firebase Treasure Hunt Game Initialized');
 
 // Export for global access
 window.firebaseGame = firebaseGame; 
+

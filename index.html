@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Office Treasure Hunt</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Office Treasure Hunt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-<div class="container">
+  <div class="container">
     <div class="hero-section">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-            <img src="back-to-college.png" alt="Back to College Logo" style="height: 60px;">
-            
-            <h1 style="margin: 0; font-size: 2.5rem; font-weight: 700; color: #990000; text-align: center; flex: 1;">
-                🏆 VOIS Treasure Hunt 🏆
-            </h1>
+      <div class="header">
+        <img src="back-to-college.png" alt="Back to College Logo" class="logo" />
+        <h1 class="title">🏆 VOIS Treasure Hunt 🏆</h1>
+        <img src="fun-factory.png" alt="Fun Factory Logo" class="logo" />
+      </div>
 
-            <img src="fun-factory.png" alt="Fun Factory Logo" style="height: 60px;">
+      <p class="subtitle">Welcome to the ultimate office adventure!</p>
+
+      <div class="options">
+        <div class="option-card">
+          <h3>👥 For Teams</h3>
+          <p>Scan the QR codes to start your treasure hunt journey!</p>
+          <div class="team-setup">
+            <input type="text" id="teamId" maxlength="10" placeholder="Enter Team ID" />
+            <button onclick="setTeamId()">Start Hunt</button>
+          </div>
         </div>
 
-        <p style="text-align: center;">Welcome to the ultimate office adventure!</p>
-
-        <div class="options">
-            <div class="option-card">
-                <h3>👥 For Teams</h3>
-                <p>Scan the QR codes to start your treasure hunt journey!</p>
-                <div class="team-setup">
-                    <input type="text" id="teamId" maxlength="10">
-                    <button onclick="setTeamId()">Start Hunt</button>
-                </div>
-            </div>
-
-            <div class="option-card">
-                <h3>🎮 For Admin</h3>
-                <p>Monitor team progress and view the leaderboard</p>
-                <button onclick="goToAdmin()">Admin Dashboard</button>
-            </div>
+        <div class="option-card">
+          <h3>🎮 For Admin</h3>
+          <p>Monitor team progress and view the leaderboard</p>
+          <button onclick="goToAdmin()">Admin Dashboard</button>
         </div>
+      </div>
     </div>
 
-
-        
-        <div class="info-section", align="center">
-            <h2>Game Rules</h2>
-            <ul>
-                <li>🔍 Scan QR codes in sequence</li>
-                <li>📝 Read each clue carefully</li>
-                <li>🔢 Submit the previous task code to proceed</li>
-                <li>⚡ Complete all 4 tasks to win!</li>
-            </ul>
-        </div>
+    <div class="info-section">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>🔍 Scan QR codes in sequence</li>
+        <li>📝 Read each clue carefully</li>
+        <li>🔢 Submit the previous task code to proceed</li>
+        <li>⚡ Complete all 4 tasks to win!</li>
+      </ul>
     </div>
-    
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
